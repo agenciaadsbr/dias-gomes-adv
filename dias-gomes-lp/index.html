@@ -223,27 +223,6 @@
   .footer-contact li{font-size:13.5px; color:rgba(255,255,255,.6); line-height:1.65;}
   .footer-bottom{padding:24px 0 32px; display:flex; flex-direction:column; gap:6px; text-align:center;}
   .footer-bottom p{font-size:11px; color:rgba(255,255,255,.4); line-height:1.6; max-width:720px; margin:0 auto;}
-
-  /* ---------- Floating WhatsApp button ---------- */
-  .fab-wa{
-    position:fixed; right:22px; bottom:22px; z-index:60;
-    display:flex; align-items:center; gap:10px;
-    background:var(--tan); color:#fff; border-radius:100px;
-    padding:14px; box-shadow:0 12px 28px rgba(0,56,59,.28);
-    transition:transform .2s ease, box-shadow .2s ease, padding .2s ease;
-  }
-  .fab-wa svg{width:26px; height:26px; flex-shrink:0;}
-  .fab-wa .fab-label{
-    max-width:0; overflow:hidden; white-space:nowrap; font-size:14px; font-weight:700;
-    font-family:'Manrope',sans-serif; transition:max-width .25s ease;
-  }
-  .fab-wa:hover{background:#94694A; transform:translateY(-2px); box-shadow:0 16px 34px rgba(0,56,59,.34);}
-  @media(min-width:640px){
-    .fab-wa:hover .fab-label{max-width:160px; margin-right:2px;}
-  }
-  @media(max-width:640px){
-    .fab-wa{right:16px; bottom:16px; padding:14px;}
-  }
 </style>
 </head>
 <body>
@@ -520,10 +499,6 @@
     });
   }
 </script>
-<a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20saber%20se%20tenho%20direito%20ao%20aux%C3%ADlio-moradia%20da%20resid%C3%AAncia%20m%C3%A9dica." class="fab-wa" aria-label="Falar no WhatsApp" target="_blank" rel="noopener">
-  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.85.5 3.6 1.44 5.13L2 22l5.13-1.55c1.47.8 3.14 1.25 4.91 1.25 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2z"/></svg>
-  <span class="fab-label">Falar no WhatsApp</span>
-</a>
 
 </body>
 </html>
