@@ -495,7 +495,8 @@
       const nome = document.getElementById('leadNome').value.trim();
       const telefone = document.getElementById('leadTelefone').value.trim();
       const params = new URLSearchParams({ nome, telefone });
-      window.location.href = 'redirect.html?' + params.toString();
+      const target = 'redirect.html?' + params.toString();
+      try{ window.top.location.href = target; }catch(err){ window.location.href = target; }
     });
   }
 </script>
