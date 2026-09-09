@@ -135,9 +135,7 @@
     subtextEl.innerHTML = 'Recebemos seus dados. Você será direcionado ao WhatsApp do escritório em instantes para continuar a verificação do seu caso, <b>' + primeiroNome + '</b>.';
   }
 
-  let mensagem = 'Olá! Me chamo ' + (nome || '[nome não informado]') + ' e vim pelo site.';
-  mensagem += ' Quero saber se tenho direito ao auxílio-moradia da residência médica.';
-  if(telefone){ mensagem += ' Meu telefone para contato: ' + telefone + '.'; }
+  let mensagem = 'Olá! Vim do Google e quero falar com um advogado especialista.';
 
   const waLink = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(mensagem);
   document.getElementById('waFallback').setAttribute('href', waLink);
